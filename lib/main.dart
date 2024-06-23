@@ -21,8 +21,8 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        theme: ThemeData.dark()
-            .copyWith(scaffoldBackgroundColor: Color.fromARGB(255, 23, 21, 21)),
+        theme: ThemeData.dark().copyWith(
+            scaffoldBackgroundColor: const Color.fromARGB(255, 23, 21, 21)),
         initialRoute: MainScreen.id,
         routes: {
           HomeScreen.id: (context) => const HomeScreen(),
